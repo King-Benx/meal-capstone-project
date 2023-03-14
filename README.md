@@ -1,1 +1,1 @@
-# poke-capstone-project
+# meals-capstone-project
