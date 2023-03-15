@@ -1,4 +1,5 @@
 import '../styles/style.scss';
+import './modal.scss';
 
 const mainContent = document.getElementById('mainSection');
 
@@ -136,5 +137,25 @@ const initialize = (element) => {
   ];
   populateView(dummyData, element);
 };
+
+// modal implimentation started
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+// modal implimentation ended
 
 document.addEventListener('DOMContentLoaded', () => initialize(mainContent));
