@@ -1,0 +1,93 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+}
+
+header {
+  padding-block: 1rem;
+
+  a {
+    text-decoration: none;
+    display: flex;
+    gap: 0.4rem;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      display: block;
+    }
+
+    img {
+      border-radius: 50%;
+    }
+  }
+}
+
+footer {
+  margin-block-start: 2rem;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  padding-block: 1.5rem;
+  border-top: 1px solid gray;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block-end: 4rem;
+
+  .card {
+    margin-block: 1rem;
+
+    .card-image {
+      width: 200px;
+      height: 200px;
+    }
+
+    .card-body {
+      padding-block: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+
+      .card-likes {
+        cursor: pointer;
+
+        :hover {
+          font-size: 1.1rem;
+          color: red;
+        }
+      }
+    }
+
+    .card-footer {
+      text-align: center;
+
+      button {
+        width: 100%;
+        padding: 0.3rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media screen and (width > 530px) {
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (width > 917px) {
+    padding-inline: 20%;
+  }
+}
