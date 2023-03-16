@@ -9,47 +9,16 @@ body {
   background: white;
 }
 
-img {
-  width: 100%;
-}
-
-header {
-  padding-block: 1rem;
-
-  a {
-    text-decoration: none;
-    display: flex;
-    gap: 0.4rem;
-    justify-content: center;
-    align-items: center;
-
-    span {
-      display: block;
-    }
-
-    img {
-      border-radius: 50%;
-    }
-  }
-}
-
-footer {
-  margin-block-start: 2rem;
-  background-color: white;
-  width: 100%;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  padding-block: 1.5rem;
-  border-top: 1px solid gray;
-}
-
 dialog {
   border: 1px solid rgb(68, 39, 39);
   border-radius: 4px;
   z-index: 1;
   width: 90%;
   margin: auto;
+
+  img {
+    width: 100%;
+  }
 
   h3,
   h4 {
@@ -96,6 +65,37 @@ dialog {
   @media screen and (width > 954px) {
     width: 50%;
   }
+}
+
+header {
+  padding-block: 1rem;
+
+  a {
+    text-decoration: none;
+    display: flex;
+    gap: 0.4rem;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      display: block;
+    }
+
+    img {
+      border-radius: 50%;
+    }
+  }
+}
+
+footer {
+  margin-block-start: 2rem;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  padding-block: 1.5rem;
+  border-top: 1px solid gray;
 }
 
 .main {
