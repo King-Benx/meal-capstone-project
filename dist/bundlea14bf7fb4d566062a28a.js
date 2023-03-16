@@ -2,32 +2,6 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/modules/modal.scss":
-/*!*************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/modules/modal.scss ***!
-  \*************************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-// Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n\n.modal {\n  display: none;\n  position: fixed;\n  z-index: 1;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  overflow: auto;\n  background-color: rgb(0, 0, 0);\n  background-color: rgba(0, 0, 0, 0.4);\n}\n\n.modal-content {\n  background-color: #fefefe;\n  margin: 5px auto;\n  padding: 20px;\n  border: 1px solid #888;\n  width: 80%;\n  border-radius: 8px;\n  text-align: center;\n}\n\n.close {\n  color: #aaa;\n  float: right;\n  font-size: 28px;\n  font-weight: bold;\n}\n\n.close:hover,\n.close:focus {\n  color: black;\n  text-decoration: none;\n  cursor: pointer;\n}\n\nul li {\n  padding: 0 25%;\n  list-style-type: none;\n  display: flex;\n  justify-content: space-between;\n  line-height: 150%;\n}\n\nform {\n  display: flex;\n  flex-direction: column;\n  gap: 15px;\n  padding: 5px 25%;\n}\n\nbutton {\n  padding: 5px 10px;\n  width: fit-content;\n}", "",{"version":3,"sources":["webpack://./src/modules/modal.scss"],"names":[],"mappings":"AAAA;EACE,sBAAA;EACA,SAAA;EACA,UAAA;AACF;;AAEA;EACE,aAAA;EACA,eAAA;EACA,UAAA;EACA,OAAA;EACA,MAAA;EACA,WAAA;EACA,YAAA;EACA,cAAA;EACA,8BAAA;EACA,oCAAA;AACF;;AAEA;EACE,yBAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,UAAA;EACA,kBAAA;EACA,kBAAA;AACF;;AAEA;EACE,WAAA;EACA,YAAA;EACA,eAAA;EACA,iBAAA;AACF;;AAEA;;EAEE,YAAA;EACA,qBAAA;EACA,eAAA;AACF;;AAEA;EACE,cAAA;EACA,qBAAA;EACA,aAAA;EACA,8BAAA;EACA,iBAAA;AACF;;AAEA;EACE,aAAA;EACA,sBAAA;EACA,SAAA;EACA,gBAAA;AACF;;AAEA;EACE,iBAAA;EACA,kBAAA;AACF","sourcesContent":["* {\r\n  box-sizing: border-box;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.modal {\r\n  display: none;\r\n  position: fixed;\r\n  z-index: 1;\r\n  left: 0;\r\n  top: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  overflow: auto;\r\n  background-color: rgb(0, 0, 0);\r\n  background-color: rgba(0, 0, 0, 0.4);\r\n}\r\n\r\n.modal-content {\r\n  background-color: #fefefe;\r\n  margin: 5px auto;\r\n  padding: 20px;\r\n  border: 1px solid #888;\r\n  width: 80%;\r\n  border-radius: 8px;\r\n  text-align: center;\r\n}\r\n\r\n.close {\r\n  color: #aaa;\r\n  float: right;\r\n  font-size: 28px;\r\n  font-weight: bold;\r\n}\r\n\r\n.close:hover,\r\n.close:focus {\r\n  color: black;\r\n  text-decoration: none;\r\n  cursor: pointer;\r\n}\r\n\r\nul li {\r\n  padding: 0 25%;\r\n  list-style-type: none;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  line-height: 150%;\r\n}\r\n\r\nform {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 15px;\r\n  padding: 5px 25%;\r\n}\r\n\r\nbutton {\r\n  padding: 5px 10px;\r\n  width: fit-content;\r\n}"],"sourceRoot":""}]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/style.scss":
 /*!************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/style.scss ***!
@@ -47,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "*,\n*::after,\n*::before {\n  margin: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  background: white;\n}\n\nheader {\n  padding-block: 1rem;\n}\nheader a {\n  text-decoration: none;\n  display: flex;\n  gap: 0.4rem;\n  justify-content: center;\n  align-items: center;\n}\nheader a span {\n  display: block;\n}\nheader a img {\n  border-radius: 50%;\n}\n\nfooter {\n  margin-block-start: 2rem;\n  background-color: white;\n  width: 100%;\n  text-align: center;\n  position: fixed;\n  bottom: 0;\n  padding-block: 1.5rem;\n  border-top: 1px solid gray;\n}\n\n.main {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  padding-block-end: 4rem;\n}\n.main .card {\n  margin-block: 1rem;\n}\n.main .card .card-image {\n  width: 200px;\n  height: 200px;\n}\n.main .card .card-body {\n  padding-block: 0.5rem;\n  display: flex;\n  justify-content: space-between;\n}\n.main .card .card-body .card-likes {\n  cursor: pointer;\n}\n.main .card .card-body .card-likes :hover {\n  font-size: 1.1rem;\n  color: red;\n}\n.main .card .card-footer {\n  text-align: center;\n}\n.main .card .card-footer button {\n  width: 100%;\n  padding: 0.3rem;\n  cursor: pointer;\n}\n@media screen and (width > 530px) {\n  .main {\n    flex-direction: row;\n    gap: 2rem;\n    flex-wrap: wrap;\n  }\n}\n@media screen and (width > 917px) {\n  .main {\n    padding-inline: 20%;\n  }\n}", "",{"version":3,"sources":["webpack://./src/styles/style.scss"],"names":[],"mappings":"AAAA;;;EAGE,SAAA;EACA,sBAAA;AACF;;AAEA;EACE,iBAAA;AACF;;AAEA;EACE,mBAAA;AACF;AACE;EACE,qBAAA;EACA,aAAA;EACA,WAAA;EACA,uBAAA;EACA,mBAAA;AACJ;AACI;EACE,cAAA;AACN;AAEI;EACE,kBAAA;AAAN;;AAKA;EACE,wBAAA;EACA,uBAAA;EACA,WAAA;EACA,kBAAA;EACA,eAAA;EACA,SAAA;EACA,qBAAA;EACA,0BAAA;AAFF;;AAKA;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,uBAAA;AAFF;AAIE;EACE,kBAAA;AAFJ;AAII;EACE,YAAA;EACA,aAAA;AAFN;AAKI;EACE,qBAAA;EACA,aAAA;EACA,8BAAA;AAHN;AAKM;EACE,eAAA;AAHR;AAKQ;EACE,iBAAA;EACA,UAAA;AAHV;AAQI;EACE,kBAAA;AANN;AAQM;EACE,WAAA;EACA,eAAA;EACA,eAAA;AANR;AAWE;EAzCF;IA0CI,mBAAA;IACA,SAAA;IACA,eAAA;EARF;AACF;AAUE;EA/CF;IAgDI,mBAAA;EAPF;AACF","sourcesContent":["*,\r\n*::after,\r\n*::before {\r\n  margin: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  background: white;\r\n}\r\n\r\nheader {\r\n  padding-block: 1rem;\r\n\r\n  a {\r\n    text-decoration: none;\r\n    display: flex;\r\n    gap: 0.4rem;\r\n    justify-content: center;\r\n    align-items: center;\r\n\r\n    span {\r\n      display: block;\r\n    }\r\n\r\n    img {\r\n      border-radius: 50%;\r\n    }\r\n  }\r\n}\r\n\r\nfooter {\r\n  margin-block-start: 2rem;\r\n  background-color: white;\r\n  width: 100%;\r\n  text-align: center;\r\n  position: fixed;\r\n  bottom: 0;\r\n  padding-block: 1.5rem;\r\n  border-top: 1px solid gray;\r\n}\r\n\r\n.main {\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-items: center;\r\n  padding-block-end: 4rem;\r\n\r\n  .card {\r\n    margin-block: 1rem;\r\n\r\n    .card-image {\r\n      width: 200px;\r\n      height: 200px;\r\n    }\r\n\r\n    .card-body {\r\n      padding-block: 0.5rem;\r\n      display: flex;\r\n      justify-content: space-between;\r\n\r\n      .card-likes {\r\n        cursor: pointer;\r\n\r\n        :hover {\r\n          font-size: 1.1rem;\r\n          color: red;\r\n        }\r\n      }\r\n    }\r\n\r\n    .card-footer {\r\n      text-align: center;\r\n\r\n      button {\r\n        width: 100%;\r\n        padding: 0.3rem;\r\n        cursor: pointer;\r\n      }\r\n    }\r\n  }\r\n\r\n  @media screen and (width > 530px) {\r\n    flex-direction: row;\r\n    gap: 2rem;\r\n    flex-wrap: wrap;\r\n  }\r\n\r\n  @media screen and (width > 917px) {\r\n    padding-inline: 20%;\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "*,\n*::after,\n*::before {\n  margin: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  background: white;\n}\n\nheader {\n  padding-block: 1rem;\n}\nheader a {\n  text-decoration: none;\n  display: flex;\n  gap: 0.4rem;\n  justify-content: center;\n  align-items: center;\n}\nheader a span {\n  display: block;\n}\nheader a img {\n  border-radius: 50%;\n}\n\nfooter {\n  margin-block-start: 2rem;\n  background-color: white;\n  width: 100%;\n  text-align: center;\n  position: fixed;\n  bottom: 0;\n  padding-block: 1.5rem;\n  border-top: 1px solid gray;\n}\n\ndialog {\n  border: 1px solid rgb(68, 39, 39);\n  border-radius: 4px;\n  z-index: 1;\n  width: 90%;\n  margin: auto;\n}\ndialog img {\n  width: 100%;\n}\ndialog h3,\ndialog h4 {\n  text-align: center;\n  margin-block: 1.1rem;\n}\ndialog .modal-close {\n  float: right;\n  font-size: 1.3rem;\n  cursor: pointer;\n}\ndialog .modal-close:hover {\n  color: brown;\n}\ndialog form {\n  text-align: center;\n}\ndialog form .form-group {\n  width: 100%;\n  margin-block-end: 2rem;\n}\ndialog form .form-group input {\n  width: 100%;\n  padding-block: 0.4rem;\n}\ndialog form .form-group textarea {\n  width: 100%;\n}\ndialog form button {\n  padding: 0.5rem 6rem;\n}\n@media screen and (width > 617px) {\n  dialog {\n    width: 70%;\n  }\n}\n@media screen and (width > 954px) {\n  dialog {\n    width: 50%;\n  }\n}\n\n.main {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  padding-block-end: 4rem;\n}\n.main .card {\n  margin-block: 1rem;\n}\n.main .card .card-image {\n  width: 200px;\n  height: 200px;\n}\n.main .card .card-body {\n  padding-block: 0.5rem;\n  display: flex;\n  justify-content: space-between;\n}\n.main .card .card-body .card-likes {\n  cursor: pointer;\n}\n.main .card .card-body .card-likes :hover {\n  font-size: 1.1rem;\n  color: red;\n}\n.main .card .card-footer {\n  text-align: center;\n}\n.main .card .card-footer button {\n  width: 100%;\n  padding: 0.3rem;\n  cursor: pointer;\n}\n@media screen and (width > 530px) {\n  .main {\n    flex-direction: row;\n    gap: 2rem;\n    flex-wrap: wrap;\n  }\n}\n@media screen and (width > 917px) {\n  .main {\n    padding-inline: 20%;\n  }\n}", "",{"version":3,"sources":["webpack://./src/styles/style.scss"],"names":[],"mappings":"AAAA;;;EAGE,SAAA;EACA,sBAAA;AACF;;AAEA;EACE,iBAAA;AACF;;AAEA;EACE,mBAAA;AACF;AACE;EACE,qBAAA;EACA,aAAA;EACA,WAAA;EACA,uBAAA;EACA,mBAAA;AACJ;AACI;EACE,cAAA;AACN;AAEI;EACE,kBAAA;AAAN;;AAKA;EACE,wBAAA;EACA,uBAAA;EACA,WAAA;EACA,kBAAA;EACA,eAAA;EACA,SAAA;EACA,qBAAA;EACA,0BAAA;AAFF;;AAKA;EACE,iCAAA;EACA,kBAAA;EACA,UAAA;EACA,UAAA;EACA,YAAA;AAFF;AAGE;EACE,WAAA;AADJ;AAIE;;EAEE,kBAAA;EACA,oBAAA;AAFJ;AAKE;EACE,YAAA;EACA,iBAAA;EACA,eAAA;AAHJ;AAKE;EACE,YAAA;AAHJ;AAME;EACE,kBAAA;AAJJ;AAKI;EACE,WAAA;EACA,sBAAA;AAHN;AAIM;EACE,WAAA;EACA,qBAAA;AAFR;AAIM;EACE,WAAA;AAFR;AAKI;EACE,oBAAA;AAHN;AAOE;EA3CF;IA4CI,UAAA;EAJF;AACF;AAME;EA/CF;IAgDI,UAAA;EAHF;AACF;;AAMA;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,uBAAA;AAHF;AAKE;EACE,kBAAA;AAHJ;AAKI;EACE,YAAA;EACA,aAAA;AAHN;AAMI;EACE,qBAAA;EACA,aAAA;EACA,8BAAA;AAJN;AAMM;EACE,eAAA;AAJR;AAMQ;EACE,iBAAA;EACA,UAAA;AAJV;AASI;EACE,kBAAA;AAPN;AASM;EACE,WAAA;EACA,eAAA;EACA,eAAA;AAPR;AAYE;EAzCF;IA0CI,mBAAA;IACA,SAAA;IACA,eAAA;EATF;AACF;AAWE;EA/CF;IAgDI,mBAAA;EARF;AACF","sourcesContent":["*,\r\n*::after,\r\n*::before {\r\n  margin: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  background: white;\r\n}\r\n\r\nheader {\r\n  padding-block: 1rem;\r\n\r\n  a {\r\n    text-decoration: none;\r\n    display: flex;\r\n    gap: 0.4rem;\r\n    justify-content: center;\r\n    align-items: center;\r\n\r\n    span {\r\n      display: block;\r\n    }\r\n\r\n    img {\r\n      border-radius: 50%;\r\n    }\r\n  }\r\n}\r\n\r\nfooter {\r\n  margin-block-start: 2rem;\r\n  background-color: white;\r\n  width: 100%;\r\n  text-align: center;\r\n  position: fixed;\r\n  bottom: 0;\r\n  padding-block: 1.5rem;\r\n  border-top: 1px solid gray;\r\n}\r\n\r\ndialog {\r\n  border:1px solid rgb(68, 39, 39);\r\n  border-radius: 4px;;\r\n  z-index: 1;\r\n  width: 90%;\r\n  margin: auto;\r\n  img {\r\n    width: 100%;\r\n  }\r\n\r\n  h3,\r\n  h4 {\r\n    text-align: center;\r\n    margin-block: 1.1rem;\r\n  }\r\n\r\n  .modal-close {\r\n    float: right;\r\n    font-size: 1.3rem;\r\n    cursor: pointer;\r\n  }\r\n  .modal-close:hover {\r\n    color: brown;\r\n  }\r\n\r\n  form{\r\n    text-align: center;\r\n    .form-group{\r\n      width: 100%;\r\n      margin-block-end: 2rem;\r\n      input{\r\n        width: 100%;\r\n        padding-block:0.4rem;\r\n      }\r\n      textarea{\r\n        width: 100%;\r\n      }  \r\n    }\r\n    button{\r\n      padding:0.5rem 6rem;\r\n    }\r\n  }\r\n\r\n  @media screen and (width > 617px) {\r\n    width: 70%;\r\n  }\r\n\r\n  @media screen and (width > 954px) {\r\n    width: 50%;\r\n  }\r\n}\r\n\r\n.main {\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-items: center;\r\n  padding-block-end: 4rem;\r\n\r\n  .card {\r\n    margin-block: 1rem;\r\n\r\n    .card-image {\r\n      width: 200px;\r\n      height: 200px;\r\n    }\r\n\r\n    .card-body {\r\n      padding-block: 0.5rem;\r\n      display: flex;\r\n      justify-content: space-between;\r\n\r\n      .card-likes {\r\n        cursor: pointer;\r\n\r\n        :hover {\r\n          font-size: 1.1rem;\r\n          color: red;\r\n        }\r\n      }\r\n    }\r\n\r\n    .card-footer {\r\n      text-align: center;\r\n\r\n      button {\r\n        width: 100%;\r\n        padding: 0.3rem;\r\n        cursor: pointer;\r\n      }\r\n    }\r\n  }\r\n\r\n  @media screen and (width > 530px) {\r\n    flex-direction: row;\r\n    gap: 2rem;\r\n    flex-wrap: wrap;\r\n  }\r\n\r\n  @media screen and (width > 917px) {\r\n    padding-inline: 20%;\r\n  }\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -170,60 +144,6 @@ module.exports = function (item) {
   }
   return [content].join("\n");
 };
-
-/***/ }),
-
-/***/ "./src/modules/modal.scss":
-/*!********************************!*\
-  !*** ./src/modules/modal.scss ***!
-  \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_modal_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./modal.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/modules/modal.scss");
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-var options = {};
-
-options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
-options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
-
-      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
-    
-options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
-options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_modal_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
-
-
-
-
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_modal_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_modal_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_modal_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
-
 
 /***/ }),
 
@@ -629,14 +549,152 @@ var __webpack_exports__ = {};
   \******************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/style.scss */ "./src/styles/style.scss");
-/* harmony import */ var _modal_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modal.scss */ "./src/modules/modal.scss");
-
 
 var mainContent = document.getElementById('mainSection');
+var modal = document.querySelector('#modal');
+var closeModal = document.querySelector('.modal-close');
+var cardImage = document.getElementById('card-image');
+var cardMealName = document.getElementById('card-meal-name');
+var cardMealDescription = document.getElementById('card-meal-description');
+var mealId = document.getElementById('meal-id');
+var tableBody = document.getElementById('table-body');
+var dummyData = [{
+  id: 1,
+  name: 'Meal 1',
+  url: 'https://placehold.co/200x200/png',
+  description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
+  comments: [{
+    date: '01/01/2020',
+    name: 'John Doe',
+    comment: 'comment'
+  }],
+  likes: 10
+}, {
+  id: 2,
+  name: 'Meal 2',
+  url: 'https://placehold.co/200x200/png',
+  description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
+  comments: [{
+    date: '01/01/2020',
+    name: 'John Doe',
+    comment: 'comment'
+  }],
+  likes: 10
+}, {
+  id: 3,
+  name: 'Meal 3',
+  url: 'https://placehold.co/200x200/png',
+  description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
+  comments: [{
+    date: '01/01/2020',
+    name: 'John Doe',
+    comment: 'comment'
+  }],
+  likes: 10
+}, {
+  id: 4,
+  name: 'Meal 4',
+  url: 'https://placehold.co/200x200/png',
+  description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
+  comments: [{
+    date: '01/01/2020',
+    name: 'John Doe',
+    comment: 'comment'
+  }],
+  likes: 10
+}, {
+  id: 5,
+  name: 'Meal 5',
+  url: 'https://placehold.co/200x200/png',
+  description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
+  comments: [{
+    date: '01/01/2020',
+    name: 'John Doe',
+    comment: 'comment'
+  }],
+  likes: 10
+}, {
+  id: 6,
+  name: 'Meal 6',
+  url: 'https://placehold.co/200x200/png',
+  description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
+  comments: [{
+    date: '01/01/2020',
+    name: 'John Doe',
+    comment: 'comment'
+  }],
+  likes: 10
+}, {
+  id: 7,
+  name: 'Meal 7',
+  url: 'https://placehold.co/200x200/png',
+  description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
+  comments: [{
+    date: '01/01/2020',
+    name: 'John Doe',
+    comment: 'comment'
+  }],
+  likes: 10
+}, {
+  id: 8,
+  name: 'Meal 8',
+  url: 'https://placehold.co/200x200/png',
+  description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
+  comments: [{
+    date: '01/01/2020',
+    name: 'John Doe',
+    comment: 'comment'
+  }],
+  likes: 10
+}, {
+  id: 9,
+  name: 'Meal 9',
+  url: 'https://placehold.co/200x200/png',
+  description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
+  comments: [{
+    date: '01/01/2020',
+    name: 'John Doe',
+    comment: 'comment'
+  }],
+  likes: 10
+}, {
+  id: 10,
+  name: 'Meal 10',
+  url: 'https://placehold.co/200x200/png',
+  description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
+  comments: [{
+    date: '01/01/2020',
+    name: 'John Doe',
+    comment: 'comment'
+  }],
+  likes: 10
+}, {
+  id: 11,
+  name: 'Meal 11',
+  url: 'https://placehold.co/200x200/png',
+  description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
+  comments: [{
+    date: '01/01/2020',
+    name: 'John Doe',
+    comment: 'comment'
+  }],
+  likes: 10
+}, {
+  id: 12,
+  name: 'Meal 12',
+  url: 'https://placehold.co/200x200/png',
+  description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
+  comments: [{
+    date: '01/01/2020',
+    name: 'John Doe',
+    comment: 'comment'
+  }],
+  likes: 10
+}];
 var createCard = function createCard(id, url, name, likes, element) {
   var card = document.createElement('div');
   card.className = 'card';
-  card.innerHTML = "\n         <div class=\"card-image\">\n            <img src=".concat(url, " alt=\"\" />\n          </div>\n          <div class=\"card-body\">\n            <div class=\"card-name\">\n              <span>").concat(name, "</span>\n            </div>\n            <div class=\"card-likes\">\n              <svg\n                fill=\"#919191\"\n                height=\"16px\"\n                width=\"16px\"\n                version=\"1.1\"\n                id=\"Capa_1\"\n                xmlns=\"http://www.w3.org/2000/svg\"\n                xmlns:xlink=\"http://www.w3.org/1999/xlink\"\n                viewBox=\"0 0 471.701 471.701\"\n                xml:space=\"preserve\"\n              >\n                <g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g>\n                <g\n                  id=\"SVGRepo_tracerCarrier\"\n                  stroke-linecap=\"round\"\n                  stroke-linejoin=\"round\"\n                ></g>\n                <g id=\"SVGRepo_iconCarrier\">\n                  <g>\n                    <path\n                      d=\"M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3 C444.801,187.101,434.001,213.101,414.401,232.701z\"\n                    ></path>\n                  </g>\n                </g>\n              </svg>\n              <span>").concat(likes, " Likes</span>\n            </div>\n          </div>\n          <div class=\"card-footer\">\n            <button id=").concat(id, ">Comments</button>\n          </div>\n    ");
+  card.innerHTML = "\n         <div class=\"card-image\">\n            <img src=".concat(url, " alt=\"\" />\n          </div>\n          <div class=\"card-body\">\n            <div class=\"card-name\">\n              <span>").concat(name, "</span>\n            </div>\n            <div class=\"card-likes\">\n              <svg\n                fill=\"#919191\"\n                height=\"16px\"\n                width=\"16px\"\n                version=\"1.1\"\n                id=\"Capa_1\"\n                xmlns=\"http://www.w3.org/2000/svg\"\n                xmlns:xlink=\"http://www.w3.org/1999/xlink\"\n                viewBox=\"0 0 471.701 471.701\"\n                xml:space=\"preserve\"\n              >\n                <g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g>\n                <g\n                  id=\"SVGRepo_tracerCarrier\"\n                  stroke-linecap=\"round\"\n                  stroke-linejoin=\"round\"\n                ></g>\n                <g id=\"SVGRepo_iconCarrier\">\n                  <g>\n                    <path\n                      d=\"M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3 C444.801,187.101,434.001,213.101,414.401,232.701z\"\n                    ></path>\n                  </g>\n                </g>\n              </svg>\n              <span>").concat(likes, " Likes</span>\n            </div>\n          </div>\n          <div class=\"card-footer\">\n            <button id=").concat(id, " class=\"open-modal\">Comments</button>\n          </div>\n    ");
   element.append(card);
 };
 var populateView = function populateView(data, element) {
@@ -650,88 +708,48 @@ var populateView = function populateView(data, element) {
     createCard(id, url, name, likes, element);
   }
 };
-var initialize = function initialize(element) {
-  var dummyData = [{
-    id: 1,
-    name: 'Meal 1',
-    url: 'https://placehold.co/200x200/png',
-    likes: 10
-  }, {
-    id: 2,
-    name: 'Meal 2',
-    url: 'https://placehold.co/200x200/png',
-    likes: 10
-  }, {
-    id: 3,
-    name: 'Meal 3',
-    url: 'https://placehold.co/200x200/png',
-    likes: 10
-  }, {
-    id: 4,
-    name: 'Meal 4',
-    url: 'https://placehold.co/200x200/png',
-    likes: 10
-  }, {
-    id: 5,
-    name: 'Meal 5',
-    url: 'https://placehold.co/200x200/png',
-    likes: 10
-  }, {
-    id: 6,
-    name: 'Meal 6',
-    url: 'https://placehold.co/200x200/png',
-    likes: 10
-  }, {
-    id: 7,
-    name: 'Meal 7',
-    url: 'https://placehold.co/200x200/png',
-    likes: 10
-  }, {
-    id: 8,
-    name: 'Meal 8',
-    url: 'https://placehold.co/200x200/png',
-    likes: 10
-  }, {
-    id: 9,
-    name: 'Meal 9',
-    url: 'https://placehold.co/200x200/png',
-    likes: 10
-  }, {
-    id: 10,
-    name: 'Meal 10',
-    url: 'https://placehold.co/200x200/png',
-    likes: 10
-  }, {
-    id: 11,
-    name: 'Meal 11',
-    url: 'https://placehold.co/200x200/png',
-    likes: 10
-  }, {
-    id: 12,
-    name: 'Meal 12',
-    url: 'https://placehold.co/200x200/png',
-    likes: 10
-  }];
-  populateView(dummyData, element);
+var createTableRow = function createTableRow(date, name, comment) {
+  var tableRow = document.createElement('tr');
+  tableRow.innerHTML = "\n   <tr>\n    <td>".concat(date, " ").concat(name, ":</td>\n    <td>").concat(comment, "</td>\n  </tr>\n  ");
+  tableBody.append(tableRow);
 };
-
-// modal implimentation started
-var modal = document.getElementById('myModal');
-var btn = document.getElementById('myBtn');
-var span = document.getElementsByClassName('close')[0];
-btn.onclick = function () {
-  modal.style.display = 'block';
-};
-span.onclick = function () {
-  modal.style.display = 'none';
-};
-window.onclick = function (event) {
-  if (event.target === modal) {
-    modal.style.display = 'none';
+var populateCardTable = function populateCardTable(data) {
+  tableBody.innerHTML = '';
+  for (var i = 0; i < data.length; i += 1) {
+    var _data$i2 = data[i],
+      date = _data$i2.date,
+      name = _data$i2.name,
+      comment = _data$i2.comment;
+    createTableRow(date, name, comment);
   }
 };
-// modal implimentation ended
-
+mainContent.addEventListener('click', function (e) {
+  var target = e.target.closest('.open-modal');
+  if (target) {
+    var _dummyData$filter$ = dummyData.filter(function (it) {
+        return it.id.toString() === target.id;
+      })[0],
+      id = _dummyData$filter$.id,
+      name = _dummyData$filter$.name,
+      url = _dummyData$filter$.url,
+      description = _dummyData$filter$.description,
+      comments = _dummyData$filter$.comments;
+    cardImage.setAttribute('src', url);
+    cardMealName.innerText = name;
+    cardMealDescription.innerText = description;
+    mealId.setAttribute('value', id);
+    populateCardTable(comments);
+    document.body.style = 'filter: blur(5px)';
+    modal.showModal();
+  }
+});
+closeModal.addEventListener('click', function () {
+  document.body.style = 'filter:unset';
+  modal.close();
+});
+var initialize = function initialize(element) {
+  return populateView(dummyData, element);
+};
 document.addEventListener('DOMContentLoaded', function () {
   return initialize(mainContent);
 });
@@ -739,4 +757,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /******/ })()
 ;
-//# sourceMappingURL=bundlee8d197cca4efbf4d1343.js.map
+//# sourceMappingURL=bundlea14bf7fb4d566062a28a.js.map

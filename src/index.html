@@ -1,57 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>
-    <%= htmlWebpackPlugin.options.title %>
-  </title>
-</head>
-
-<body>
-  <div class="container">
-    <!-- Header -->
-    <header>
-      <a href="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <a href="">
         <img src="https://placehold.co/40x40/orange/white?font=Lora&text=MC" alt="" />
         <span>Meal Capstone Project</span>
-      </a>
-    </header>
-    <!-- Main-->
-    <section id="mainSection" class="main"></section>
-    <!-- Footer -->
-    <footer>Created by Microverse under CC Licence</footer>
-    <!-- Dialog -->
-    <dialog class="modal" id="modal">
-      <span class="modal-close">x</span>
-      <div class="card-image">
-        <img id="card-image" alt="" />
-      </div>
-      <div class="modal-body">
-        <h3 id="card-meal-name"></h3>
-        <p id="card-meal-description"></p>
-        <h4>Comments <span id="comment-number"></span></h4>
-        <table>
-          <tbody id="table-body">
-          </tbody>
-        </table>
-        <h4>Add a comment</h4>
-        <form>
-          <div class="form-group">
-            <input type="text" placeholder="your name" name="name" id="name" required />
-          </div>
-          <div class="form-group">
-            <textarea name="comment" id="comment" cols="30" rows="10" required placeholder="Your insights">
+        </a>
+      </header>
+      <!-- Main-->
+      <section id="mainSection" class="main"></section>
+      <!-- Dialog -->
+      <dialog class="modal" id="modal">
+        <span class="modal-close">x</span>
+        <div class="card-image">
+          <img id="card-image" alt=""/>
+        </div>
+        <div class="modal-body">
+          <h3 id="card-meal-name"></h3>
+          <p id="card-meal-description"></p>
+          <h4>Comments <span id="comment-number"></span></h4>
+          <table>
+            <tbody id="table-body">
+            </tbody>
+          </table>
+          <h4>Add a comment</h4>
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="your name" name="name" id="name" required/>
+            </div>
+            <div class="form-group">
+             <textarea name="comment" id="comment" cols="30" rows="10" required placeholder="Your insights">
 
-           </textarea>
-          </div>
-          <input type="hidden" id="meal-id" />
-          <button type="submit">Comment</button>
-        </form>
-      </div>
-    </dialog>
-</body>
-
+             </textarea>
+            </div>
+            <input type="hidden" id="meal-id"/>
+            <button type="submit">Comment</button>
+          </form>
+        </div>
+      </dialog>
+      <!-- Footer -->
+      <footer>Created by Microverse under CC Licence</footer>
+    </div>
+  </body>
 </html>
