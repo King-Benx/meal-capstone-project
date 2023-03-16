@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/modules/mystyle.scss":
-/*!***************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/modules/mystyle.scss ***!
-  \***************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/style.scss":
+/*!************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/style.scss ***!
+  \************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\n  font: 100% Helvetica, sans-serif;\n  color: #333;\n}", "",{"version":3,"sources":["webpack://./src/modules/mystyle.scss"],"names":[],"mappings":"AAGA;EACE,gCAAA;EACA,WAJc;AAEhB","sourcesContent":["$font-stack: Helvetica, sans-serif;\r\n$primary-color: #333;\r\n\r\nbody {\r\n  font: 100% $font-stack;\r\n  color: $primary-color;\r\n}\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "*,\n*::after,\n*::before {\n  margin: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  background: white;\n}\n\ndialog {\n  border: 1px solid rgb(68, 39, 39);\n  border-radius: 4px;\n  z-index: 1;\n  width: 90%;\n  margin: auto;\n}\ndialog img {\n  width: 100%;\n}\ndialog h3,\ndialog h4 {\n  text-align: center;\n  margin-block: 1.1rem;\n}\ndialog .modal-close {\n  float: right;\n  font-size: 1.3rem;\n  cursor: pointer;\n}\ndialog .modal-close:hover {\n  color: brown;\n}\ndialog form {\n  text-align: center;\n}\ndialog form .form-group {\n  width: 100%;\n  margin-block-end: 2rem;\n}\ndialog form .form-group input {\n  width: 100%;\n  padding-block: 0.4rem;\n}\ndialog form .form-group textarea {\n  width: 100%;\n}\ndialog form button {\n  padding: 0.5rem 6rem;\n}\n@media screen and (width > 617px) {\n  dialog {\n    width: 70%;\n  }\n}\n@media screen and (width > 954px) {\n  dialog {\n    width: 50%;\n  }\n}\n\nheader {\n  padding-block: 1rem;\n}\nheader a {\n  text-decoration: none;\n  display: flex;\n  gap: 0.4rem;\n  justify-content: center;\n  align-items: center;\n}\nheader a span {\n  display: block;\n}\nheader a img {\n  border-radius: 50%;\n}\n\nfooter {\n  margin-block-start: 2rem;\n  background-color: white;\n  width: 100%;\n  text-align: center;\n  position: fixed;\n  bottom: 0;\n  padding-block: 1.5rem;\n  border-top: 1px solid gray;\n}\n\n.main {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  padding-block-end: 4rem;\n}\n.main .card {\n  margin-block: 1rem;\n}\n.main .card .card-image {\n  width: 200px;\n  height: 200px;\n}\n.main .card .card-body {\n  padding-block: 0.5rem;\n  display: flex;\n  justify-content: space-between;\n}\n.main .card .card-body .card-likes {\n  cursor: pointer;\n}\n.main .card .card-body .card-likes :hover {\n  font-size: 1.1rem;\n  color: red;\n}\n.main .card .card-footer {\n  text-align: center;\n}\n.main .card .card-footer button {\n  width: 100%;\n  padding: 0.3rem;\n  cursor: pointer;\n}\n@media screen and (width > 530px) {\n  .main {\n    flex-direction: row;\n    gap: 2rem;\n    flex-wrap: wrap;\n  }\n}\n@media screen and (width > 917px) {\n  .main {\n    padding-inline: 20%;\n  }\n}", "",{"version":3,"sources":["webpack://./src/styles/style.scss"],"names":[],"mappings":"AAAA;;;EAGE,SAAA;EACA,sBAAA;AACF;;AAEA;EACE,iBAAA;AACF;;AAEA;EACE,iCAAA;EACA,kBAAA;EACA,UAAA;EACA,UAAA;EACA,YAAA;AACF;AACE;EACE,WAAA;AACJ;AAEE;;EAEE,kBAAA;EACA,oBAAA;AAAJ;AAGE;EACE,YAAA;EACA,iBAAA;EACA,eAAA;AADJ;AAIE;EACE,YAAA;AAFJ;AAKE;EACE,kBAAA;AAHJ;AAKI;EACE,WAAA;EACA,sBAAA;AAHN;AAKM;EACE,WAAA;EACA,qBAAA;AAHR;AAMM;EACE,WAAA;AAJR;AAQI;EACE,oBAAA;AANN;AAUE;EAjDF;IAkDI,UAAA;EAPF;AACF;AASE;EArDF;IAsDI,UAAA;EANF;AACF;;AASA;EACE,mBAAA;AANF;AAQE;EACE,qBAAA;EACA,aAAA;EACA,WAAA;EACA,uBAAA;EACA,mBAAA;AANJ;AAQI;EACE,cAAA;AANN;AASI;EACE,kBAAA;AAPN;;AAYA;EACE,wBAAA;EACA,uBAAA;EACA,WAAA;EACA,kBAAA;EACA,eAAA;EACA,SAAA;EACA,qBAAA;EACA,0BAAA;AATF;;AAYA;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,uBAAA;AATF;AAWE;EACE,kBAAA;AATJ;AAWI;EACE,YAAA;EACA,aAAA;AATN;AAYI;EACE,qBAAA;EACA,aAAA;EACA,8BAAA;AAVN;AAYM;EACE,eAAA;AAVR;AAYQ;EACE,iBAAA;EACA,UAAA;AAVV;AAeI;EACE,kBAAA;AAbN;AAeM;EACE,WAAA;EACA,eAAA;EACA,eAAA;AAbR;AAkBE;EAzCF;IA0CI,mBAAA;IACA,SAAA;IACA,eAAA;EAfF;AACF;AAiBE;EA/CF;IAgDI,mBAAA;EAdF;AACF","sourcesContent":["*,\n*::after,\n*::before {\n  margin: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  background: white;\n}\n\ndialog {\n  border: 1px solid rgb(68, 39, 39);\n  border-radius: 4px;\n  z-index: 1;\n  width: 90%;\n  margin: auto;\n\n  img {\n    width: 100%;\n  }\n\n  h3,\n  h4 {\n    text-align: center;\n    margin-block: 1.1rem;\n  }\n\n  .modal-close {\n    float: right;\n    font-size: 1.3rem;\n    cursor: pointer;\n  }\n\n  .modal-close:hover {\n    color: brown;\n  }\n\n  form {\n    text-align: center;\n\n    .form-group {\n      width: 100%;\n      margin-block-end: 2rem;\n\n      input {\n        width: 100%;\n        padding-block: 0.4rem;\n      }\n\n      textarea {\n        width: 100%;\n      }\n    }\n\n    button {\n      padding: 0.5rem 6rem;\n    }\n  }\n\n  @media screen and (width > 617px) {\n    width: 70%;\n  }\n\n  @media screen and (width > 954px) {\n    width: 50%;\n  }\n}\n\nheader {\n  padding-block: 1rem;\n\n  a {\n    text-decoration: none;\n    display: flex;\n    gap: 0.4rem;\n    justify-content: center;\n    align-items: center;\n\n    span {\n      display: block;\n    }\n\n    img {\n      border-radius: 50%;\n    }\n  }\n}\n\nfooter {\n  margin-block-start: 2rem;\n  background-color: white;\n  width: 100%;\n  text-align: center;\n  position: fixed;\n  bottom: 0;\n  padding-block: 1.5rem;\n  border-top: 1px solid gray;\n}\n\n.main {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  padding-block-end: 4rem;\n\n  .card {\n    margin-block: 1rem;\n\n    .card-image {\n      width: 200px;\n      height: 200px;\n    }\n\n    .card-body {\n      padding-block: 0.5rem;\n      display: flex;\n      justify-content: space-between;\n\n      .card-likes {\n        cursor: pointer;\n\n        :hover {\n          font-size: 1.1rem;\n          color: red;\n        }\n      }\n    }\n\n    .card-footer {\n      text-align: center;\n\n      button {\n        width: 100%;\n        padding: 0.3rem;\n        cursor: pointer;\n      }\n    }\n  }\n\n  @media screen and (width > 530px) {\n    flex-direction: row;\n    gap: 2rem;\n    flex-wrap: wrap;\n  }\n\n  @media screen and (width > 917px) {\n    padding-inline: 20%;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -147,10 +147,10 @@ module.exports = function (item) {
 
 /***/ }),
 
-/***/ "./src/modules/mystyle.scss":
-/*!**********************************!*\
-  !*** ./src/modules/mystyle.scss ***!
-  \**********************************/
+/***/ "./src/styles/style.scss":
+/*!*******************************!*\
+  !*** ./src/styles/style.scss ***!
+  \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -169,7 +169,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_mystyle_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./mystyle.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/modules/mystyle.scss");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_style_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./style.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/style.scss");
 
       
       
@@ -191,12 +191,12 @@ options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWi
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_mystyle_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_style_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_mystyle_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_mystyle_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_mystyle_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_style_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_style_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_style_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -548,10 +548,213 @@ var __webpack_exports__ = {};
   !*** ./src/modules/index.js ***!
   \******************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _mystyle_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mystyle.scss */ "./src/modules/mystyle.scss");
+/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/style.scss */ "./src/styles/style.scss");
 
+var mainContent = document.getElementById('mainSection');
+var modal = document.querySelector('#modal');
+var closeModal = document.querySelector('.modal-close');
+var cardImage = document.getElementById('card-image');
+var cardMealName = document.getElementById('card-meal-name');
+var cardMealDescription = document.getElementById('card-meal-description');
+var mealId = document.getElementById('meal-id');
+var tableBody = document.getElementById('table-body');
+var dummyData = [{
+  id: 1,
+  name: 'Meal 1',
+  url: 'https://placehold.co/200x200/png',
+  description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
+  comments: [{
+    date: '01/01/2020',
+    name: 'John Doe',
+    comment: 'comment'
+  }],
+  likes: 10
+}, {
+  id: 2,
+  name: 'Meal 2',
+  url: 'https://placehold.co/200x200/png',
+  description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
+  comments: [{
+    date: '01/01/2020',
+    name: 'John Doe',
+    comment: 'comment'
+  }],
+  likes: 10
+}, {
+  id: 3,
+  name: 'Meal 3',
+  url: 'https://placehold.co/200x200/png',
+  description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
+  comments: [{
+    date: '01/01/2020',
+    name: 'John Doe',
+    comment: 'comment'
+  }],
+  likes: 10
+}, {
+  id: 4,
+  name: 'Meal 4',
+  url: 'https://placehold.co/200x200/png',
+  description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
+  comments: [{
+    date: '01/01/2020',
+    name: 'John Doe',
+    comment: 'comment'
+  }],
+  likes: 10
+}, {
+  id: 5,
+  name: 'Meal 5',
+  url: 'https://placehold.co/200x200/png',
+  description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
+  comments: [{
+    date: '01/01/2020',
+    name: 'John Doe',
+    comment: 'comment'
+  }],
+  likes: 10
+}, {
+  id: 6,
+  name: 'Meal 6',
+  url: 'https://placehold.co/200x200/png',
+  description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
+  comments: [{
+    date: '01/01/2020',
+    name: 'John Doe',
+    comment: 'comment'
+  }],
+  likes: 10
+}, {
+  id: 7,
+  name: 'Meal 7',
+  url: 'https://placehold.co/200x200/png',
+  description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
+  comments: [{
+    date: '01/01/2020',
+    name: 'John Doe',
+    comment: 'comment'
+  }],
+  likes: 10
+}, {
+  id: 8,
+  name: 'Meal 8',
+  url: 'https://placehold.co/200x200/png',
+  description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
+  comments: [{
+    date: '01/01/2020',
+    name: 'John Doe',
+    comment: 'comment'
+  }],
+  likes: 10
+}, {
+  id: 9,
+  name: 'Meal 9',
+  url: 'https://placehold.co/200x200/png',
+  description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
+  comments: [{
+    date: '01/01/2020',
+    name: 'John Doe',
+    comment: 'comment'
+  }],
+  likes: 10
+}, {
+  id: 10,
+  name: 'Meal 10',
+  url: 'https://placehold.co/200x200/png',
+  description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
+  comments: [{
+    date: '01/01/2020',
+    name: 'John Doe',
+    comment: 'comment'
+  }],
+  likes: 10
+}, {
+  id: 11,
+  name: 'Meal 11',
+  url: 'https://placehold.co/200x200/png',
+  description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
+  comments: [{
+    date: '01/01/2020',
+    name: 'John Doe',
+    comment: 'comment'
+  }],
+  likes: 10
+}, {
+  id: 12,
+  name: 'Meal 12',
+  url: 'https://placehold.co/200x200/png',
+  description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
+  comments: [{
+    date: '01/01/2020',
+    name: 'John Doe',
+    comment: 'comment'
+  }],
+  likes: 10
+}];
+var createCard = function createCard(id, url, name, likes, element) {
+  var card = document.createElement('div');
+  card.className = 'card';
+  card.innerHTML = "\n         <div class=\"card-image\">\n            <img src=".concat(url, " alt=\"\" />\n          </div>\n          <div class=\"card-body\">\n            <div class=\"card-name\">\n              <span>").concat(name, "</span>\n            </div>\n            <div class=\"card-likes\">\n              <svg\n                fill=\"#919191\"\n                height=\"16px\"\n                width=\"16px\"\n                version=\"1.1\"\n                id=\"Capa_1\"\n                xmlns=\"http://www.w3.org/2000/svg\"\n                xmlns:xlink=\"http://www.w3.org/1999/xlink\"\n                viewBox=\"0 0 471.701 471.701\"\n                xml:space=\"preserve\"\n              >\n                <g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g>\n                <g\n                  id=\"SVGRepo_tracerCarrier\"\n                  stroke-linecap=\"round\"\n                  stroke-linejoin=\"round\"\n                ></g>\n                <g id=\"SVGRepo_iconCarrier\">\n                  <g>\n                    <path\n                      d=\"M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3 C444.801,187.101,434.001,213.101,414.401,232.701z\"\n                    ></path>\n                  </g>\n                </g>\n              </svg>\n              <span>").concat(likes, " Likes</span>\n            </div>\n          </div>\n          <div class=\"card-footer\">\n            <button id=").concat(id, " class=\"open-modal\">Comments</button>\n          </div>\n    ");
+  element.append(card);
+};
+var populateView = function populateView(data, element) {
+  element.innerHTML = '';
+  for (var i = 0; i < data.length; i += 1) {
+    var _data$i = data[i],
+      id = _data$i.id,
+      url = _data$i.url,
+      name = _data$i.name,
+      likes = _data$i.likes;
+    createCard(id, url, name, likes, element);
+  }
+};
+var createTableRow = function createTableRow(date, name, comment) {
+  var tableRow = document.createElement('tr');
+  tableRow.innerHTML = "\n   <tr>\n    <td>".concat(date, " ").concat(name, ":</td>\n    <td>").concat(comment, "</td>\n  </tr>\n  ");
+  tableBody.append(tableRow);
+};
+var populateCardTable = function populateCardTable(data) {
+  tableBody.innerHTML = '';
+  for (var i = 0; i < data.length; i += 1) {
+    var _data$i2 = data[i],
+      date = _data$i2.date,
+      name = _data$i2.name,
+      comment = _data$i2.comment;
+    createTableRow(date, name, comment);
+  }
+};
+mainContent.addEventListener('click', function (e) {
+  var target = e.target.closest('.open-modal');
+  if (target) {
+    var _dummyData$filter$ = dummyData.filter(function (it) {
+        return it.id.toString() === target.id;
+      })[0],
+      id = _dummyData$filter$.id,
+      name = _dummyData$filter$.name,
+      url = _dummyData$filter$.url,
+      description = _dummyData$filter$.description,
+      comments = _dummyData$filter$.comments;
+    cardImage.setAttribute('src', url);
+    cardMealName.innerText = name;
+    cardMealDescription.innerText = description;
+    mealId.setAttribute('value', id);
+    populateCardTable(comments);
+    document.body.style = 'filter: blur(5px)';
+    modal.showModal();
+  }
+});
+closeModal.addEventListener('click', function () {
+  document.body.style = 'filter:unset';
+  modal.close();
+});
+var initialize = function initialize(element) {
+  return populateView(dummyData, element);
+};
+document.addEventListener('DOMContentLoaded', function () {
+  return initialize(mainContent);
+});
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundlec46d120b649b8e4c333f.js.map
+//# sourceMappingURL=bundle1342ebcce52e4211efac.js.map
