@@ -2,6 +2,13 @@ import '../styles/style.scss';
 import './modal.scss';
 
 const mainContent = document.getElementById('mainSection');
+const modal = document.querySelector('#modal');
+const closeModal = document.querySelector('.modal-close');
+const cardImage = document.getElementById('card-image');
+const cardMealName = document.getElementById('card-meal-name');
+const cardMealDescription = document.getElementById('card-meal-description');
+const mealId = document.getElementById('meal-id');
+const tableBody = document.getElementById('table-body');
 
 const createCard = (id, url, name, likes, element) => {
   const card = document.createElement('div');
@@ -138,24 +145,46 @@ const initialize = (element) => {
   populateView(dummyData, element);
 };
 
-// modal implimentation started
-const modal = document.getElementById('myModal');
-const btn = document.getElementById('myBtn');
-const span = document.getElementsByClassName('close')[0];
-
-btn.onclick = () => {
-  modal.style.display = 'block';
+const createTableRow = (date, name, comment) => {
+  const tableRow = document.createElement('tr');
+  tableRow.innerHTML = `
+   <tr>
+    <td>${date} ${name}:</td>
+    <td>${comment}</td>
+  </tr>
+  `;
+  tableBody.append(tableRow);
 };
 
-span.onclick = () => {
-  modal.style.display = 'none';
-};
-
-window.onclick = (event) => {
-  if (event.target === modal) {
-    modal.style.display = 'none';
+const populateCardTable = (data) => {
+  tableBody.innerHTML = '';
+  for (let i = 0; i < data.length; i += 1) {
+    const { date, name, comment } = data[i];
+    createTableRow(date, name, comment);
   }
 };
-// modal implimentation ended
+
+mainContent.addEventListener('click', (e) => {
+  const target = e.target.closest('.open-modal');
+  if (target) {
+    const {
+      id, name, url, description, comments,
+    } = dummyData.filter((it) => it.id.toString() === target.id)[0];
+    cardImage.setAttribute('src', url);
+    cardMealName.innerText = name;
+    cardMealDescription.innerText = description;
+    mealId.setAttribute('value', id);
+    populateCardTable(comments);
+    document.body.style = 'filter: blur(5px)';
+    modal.showModal();
+  }
+});
+
+closeModal.addEventListener('click', () => {
+  document.body.style = 'filter:unset';
+  modal.close();
+});
+
+// const initialize = (element) => populateView(dummyData, element);
 
 document.addEventListener('DOMContentLoaded', () => initialize(mainContent));

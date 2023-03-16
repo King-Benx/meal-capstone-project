@@ -40,6 +40,58 @@ footer {
   border-top: 1px solid gray;
 }
 
+dialog {
+  border:1px solid rgb(68, 39, 39);
+  border-radius: 4px;;
+  z-index: 1;
+  width: 90%;
+  margin: auto;
+  img {
+    width: 100%;
+  }
+
+  h3,
+  h4 {
+    text-align: center;
+    margin-block: 1.1rem;
+  }
+
+  .modal-close {
+    float: right;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  .modal-close:hover {
+    color: brown;
+  }
+
+  form{
+    text-align: center;
+    .form-group{
+      width: 100%;
+      margin-block-end: 2rem;
+      input{
+        width: 100%;
+        padding-block:0.4rem;
+      }
+      textarea{
+        width: 100%;
+      }  
+    }
+    button{
+      padding:0.5rem 6rem;
+    }
+  }
+
+  @media screen and (width > 617px) {
+    width: 70%;
+  }
+
+  @media screen and (width > 954px) {
+    width: 50%;
+  }
+}
+
 .main {
   display: flex;
   flex-direction: column;
