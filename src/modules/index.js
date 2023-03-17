@@ -1,185 +1,15 @@
 import '../styles/style.scss';
+import sanitizeData from './data.js';
 
 const mainContent = document.getElementById('mainSection');
 
 const modal = document.querySelector('#modal');
 const closeModal = document.querySelector('.modal-close');
 const cardImage = document.getElementById('card-image');
-const cardMealName = document.getElementById('card-meal-name');
-const cardMealDescription = document.getElementById('card-meal-description');
-const mealId = document.getElementById('meal-id');
+const modalName = document.getElementById('modal-name');
+const modalDescription = document.getElementById('modal-description');
+const itemId = document.getElementById('item-id');
 const tableBody = document.getElementById('table-body');
-
-const dummyData = [
-  {
-    id: 1,
-    name: 'Meal 1',
-    url: 'https://placehold.co/200x200/png',
-    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
-    comments: [
-      {
-        date: '01/01/2020',
-        name: 'John Doe',
-        comment: 'comment',
-      },
-    ],
-    likes: 10,
-  },
-  {
-    id: 2,
-    name: 'Meal 2',
-    url: 'https://placehold.co/200x200/png',
-    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
-    comments: [
-      {
-        date: '01/01/2020',
-        name: 'John Doe',
-        comment: 'comment',
-      },
-    ],
-    likes: 10,
-  },
-  {
-    id: 3,
-    name: 'Meal 3',
-    url: 'https://placehold.co/200x200/png',
-    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
-    comments: [
-      {
-        date: '01/01/2020',
-        name: 'John Doe',
-        comment: 'comment',
-      },
-    ],
-    likes: 10,
-  },
-  {
-    id: 4,
-    name: 'Meal 4',
-    url: 'https://placehold.co/200x200/png',
-    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
-    comments: [
-      {
-        date: '01/01/2020',
-        name: 'John Doe',
-        comment: 'comment',
-      },
-    ],
-    likes: 10,
-  },
-  {
-    id: 5,
-    name: 'Meal 5',
-    url: 'https://placehold.co/200x200/png',
-    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
-    comments: [
-      {
-        date: '01/01/2020',
-        name: 'John Doe',
-        comment: 'comment',
-      },
-    ],
-    likes: 10,
-  },
-  {
-    id: 6,
-    name: 'Meal 6',
-    url: 'https://placehold.co/200x200/png',
-    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
-    comments: [
-      {
-        date: '01/01/2020',
-        name: 'John Doe',
-        comment: 'comment',
-      },
-    ],
-    likes: 10,
-  },
-  {
-    id: 7,
-    name: 'Meal 7',
-    url: 'https://placehold.co/200x200/png',
-    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
-    comments: [
-      {
-        date: '01/01/2020',
-        name: 'John Doe',
-        comment: 'comment',
-      },
-    ],
-    likes: 10,
-  },
-  {
-    id: 8,
-    name: 'Meal 8',
-    url: 'https://placehold.co/200x200/png',
-    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
-    comments: [
-      {
-        date: '01/01/2020',
-        name: 'John Doe',
-        comment: 'comment',
-      },
-    ],
-    likes: 10,
-  },
-  {
-    id: 9,
-    name: 'Meal 9',
-    url: 'https://placehold.co/200x200/png',
-    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
-    comments: [
-      {
-        date: '01/01/2020',
-        name: 'John Doe',
-        comment: 'comment',
-      },
-    ],
-    likes: 10,
-  },
-  {
-    id: 10,
-    name: 'Meal 10',
-    url: 'https://placehold.co/200x200/png',
-    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
-    comments: [
-      {
-        date: '01/01/2020',
-        name: 'John Doe',
-        comment: 'comment',
-      },
-    ],
-    likes: 10,
-  },
-  {
-    id: 11,
-    name: 'Meal 11',
-    url: 'https://placehold.co/200x200/png',
-    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
-    comments: [
-      {
-        date: '01/01/2020',
-        name: 'John Doe',
-        comment: 'comment',
-      },
-    ],
-    likes: 10,
-  },
-  {
-    id: 12,
-    name: 'Meal 12',
-    url: 'https://placehold.co/200x200/png',
-    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda recusandae dolore unde id alias molestiae cum quibusdam sint ducimus numquam placeat corporis quasi, modi beatae quas asperiores dolores nesciunt doloribus?',
-    comments: [
-      {
-        date: '01/01/2020',
-        name: 'John Doe',
-        comment: 'comment',
-      },
-    ],
-    likes: 10,
-  },
-];
 
 const createCard = (id, url, name, likes, element) => {
   const card = document.createElement('div');
@@ -257,16 +87,17 @@ const populateCardTable = (data) => {
   }
 };
 
-mainContent.addEventListener('click', (e) => {
+mainContent.addEventListener('click', async (e) => {
   const target = e.target.closest('.open-modal');
   if (target) {
+    const apiData = await sanitizeData();
     const {
       id, name, url, description, comments,
-    } = dummyData.filter((it) => it.id.toString() === target.id)[0];
+    } = apiData.filter((it) => it.id.toString() === target.id)[0];
     cardImage.setAttribute('src', url);
-    cardMealName.innerText = name;
-    cardMealDescription.innerText = description;
-    mealId.setAttribute('value', id);
+    modalName.innerText = name;
+    modalDescription.innerHTML = description;
+    itemId.setAttribute('value', id);
     populateCardTable(comments);
     document.body.style = 'filter: blur(5px)';
     modal.showModal();
@@ -278,5 +109,5 @@ closeModal.addEventListener('click', () => {
   modal.close();
 });
 
-const initialize = (element) => populateView(dummyData, element);
+const initialize = async (element) => populateView(await sanitizeData(), element);
 document.addEventListener('DOMContentLoaded', () => initialize(mainContent));
