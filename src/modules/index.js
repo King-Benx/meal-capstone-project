@@ -92,13 +92,13 @@ mainContent.addEventListener('click', async (e) => {
   if (target) {
     const apiData = await sanitizeData();
     const {
-      id, name, url, description, comments,
+      id, name, url, description,
     } = apiData.filter((it) => it.id.toString() === target.id)[0];
     cardImage.setAttribute('src', url);
     modalName.innerText = name;
     modalDescription.innerHTML = description;
     itemId.setAttribute('value', id);
-    populateCardTable(comments);
+    populateCardTable([]);
     document.body.style = 'filter: blur(5px)';
     modal.showModal();
   }
@@ -110,4 +110,6 @@ closeModal.addEventListener('click', () => {
 });
 
 const initialize = async (element) => populateView(await sanitizeData(), element);
-document.addEventListener('DOMContentLoaded', () => initialize(mainContent));
+document.addEventListener('DOMContentLoaded', () => {
+  initialize(mainContent);
+});
