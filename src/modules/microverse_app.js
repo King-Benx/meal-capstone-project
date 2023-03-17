@@ -23,12 +23,11 @@ export const getLikes = async () => {
   return likes.json();
 };
 
-export const getComments = async () => {
+export const getComments = async (itemId) => {
   const id = await createApp();
-  const comments = await fetch(`${BASE_URL}/${id}/comments`,
+  const comments = await fetch(`${BASE_URL}/${id}/comments?item_id=${itemId}`,
     {
       method: 'GET',
-      headers: { 'Content-Type': 'application/json' },
     });
   return comments.json();
 };
@@ -44,4 +43,19 @@ export const createLike = async (id) => {
       }),
     });
   return likes;
+};
+
+export const createComment = async (id, name, comment) => {
+  const appId = await createApp();
+  const comments = await fetch(`${BASE_URL}/${appId}/comments`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        item_id: id,
+        username: name,
+        comment,
+      }),
+    });
+  return comments;
 };
