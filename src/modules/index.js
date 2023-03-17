@@ -1,5 +1,6 @@
 import '../styles/style.scss';
 import sanitizeData from './data.js';
+import { createLike, getComments } from './microverse_app.js';
 
 const mainContent = document.getElementById('mainSection');
 
@@ -48,7 +49,7 @@ const createCard = (id, url, name, likes, element) => {
                   </g>
                 </g>
               </svg>
-              <span>${likes} Likes</span>
+              <span id=${id} class="modal-likes">${likes} Likes</span>
             </div>
           </div>
           <div class="card-footer">
@@ -87,20 +88,29 @@ const populateCardTable = (data) => {
   }
 };
 
+const refresh = async () => populateView(await sanitizeData(), mainContent);
+
 mainContent.addEventListener('click', async (e) => {
-  const target = e.target.closest('.open-modal');
-  if (target) {
+  const targetModal = e.target.closest('.open-modal');
+  const targetLike = e.target.closest('.modal-likes');
+  if (targetModal) {
     const apiData = await sanitizeData();
+    const comments = await getComments();
+    const itemComments = comments.filter((it) => it.iten_id === targetModal.id);
     const {
-      id, name, url, description, comments,
-    } = apiData.filter((it) => it.id.toString() === target.id)[0];
+      id, name, url, description,
+    } = apiData.filter((it) => it.id.toString() === targetModal.id)[0];
     cardImage.setAttribute('src', url);
     modalName.innerText = name;
     modalDescription.innerHTML = description;
     itemId.setAttribute('value', id);
-    populateCardTable(comments);
+    populateCardTable(itemComments);
     document.body.style = 'filter: blur(5px)';
     modal.showModal();
+  }
+  if (targetLike) {
+    await createLike(targetLike.id);
+    await refresh();
   }
 });
 
@@ -109,5 +119,6 @@ closeModal.addEventListener('click', () => {
   modal.close();
 });
 
-const initialize = async (element) => populateView(await sanitizeData(), element);
-document.addEventListener('DOMContentLoaded', () => initialize(mainContent));
+document.addEventListener('DOMContentLoaded', async () => {
+  await refresh();
+});
