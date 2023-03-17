@@ -10,6 +10,7 @@ const sanitizeData = async () => {
       method: 'GET',
     }).then((response) => response.json()),
   ]);
+
   for (let i = 0; i < data?.length; i += 1) {
     const {
       id, name, summary, image,
@@ -19,7 +20,7 @@ const sanitizeData = async () => {
       name,
       description: summary,
       url: image.original,
-      likes: allLikes.length ? allLikes.filter((likes) => likes.item_id === id).length : 0,
+      likes: allLikes.filter((likes) => likes.item_id === id.toString()).length,
       comments: [],
     });
   }

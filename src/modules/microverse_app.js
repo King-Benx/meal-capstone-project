@@ -19,9 +19,8 @@ export const getLikes = async () => {
   const likes = await fetch(`${BASE_URL}/${id}/likes`,
     {
       method: 'GET',
-      headers: { 'Content-Type': 'application/json' },
-    }).then((res) => res.json).catch(() => []);
-  return likes;
+    });
+  return likes.json();
 };
 
 export const getComments = async () => {
@@ -30,6 +29,19 @@ export const getComments = async () => {
     {
       method: 'GET',
       headers: { 'Content-Type': 'application/json' },
-    }).then((res) => res.json());
-  return comments;
+    });
+  return comments.json();
+};
+
+export const createLike = async (id) => {
+  const appId = await createApp();
+  const likes = await fetch(`${BASE_URL}/${appId}/likes`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        item_id: id,
+      }),
+    });
+  return likes;
 };
