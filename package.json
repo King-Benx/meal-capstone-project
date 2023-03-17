@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/King-Benx/meal-capstone-project.git"
+    "url": "git+https://github.com/King-Benx/your-movies-capstone-project.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/King-Benx/meal-capstone-project/issues"
+    "url": "https://github.com/King-Benx/your-movies-capstone-project/issues"
   },
-  "homepage": "https://github.com/King-Benx/meal-capstone-project#readme",
+  "homepage": "https://github.com/King-Benx/your-movies-capstone-project#readme",
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/node": "^7.20.7",
