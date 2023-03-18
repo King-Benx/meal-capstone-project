@@ -20,6 +20,7 @@
   - [👥 Authors](#-authors-)
   - [🔭 Future Features](#-future-features-)
   - [🤝 Contributing](#-contributing-)
+  - [ Acknowledgement] (#-acknowledgement-)
   - [⭐️ Show your support](#️-show-your-support-)
   - [📝 License](#-license-)
 
@@ -149,6 +150,10 @@ Contributions, issues, and feature requests are welcome!
 Feel free to check the [issues page](https://github.com/King-Benx/your-movies-capstone-project/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Acknowledgement
+
+We would like to take this opportunity to thank Microverse and the Microverse community for it's dedicated support towards the competition of this project
 
 ## ⭐️ Show your support <a name="support"></a>
 
