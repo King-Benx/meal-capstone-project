@@ -2,6 +2,7 @@ import '../styles/style.scss';
 import sanitizeData from './data.js';
 import { createLike, getComments, createComment } from './microverse_app.js';
 import { populateView, populateCardTable } from './render.js';
+import counter from './helpers.js';
 
 const mainContent = document.getElementById('mainSection');
 const modal = document.querySelector('#modal');
@@ -14,8 +15,15 @@ const formName = document.getElementById('name');
 const formComment = document.getElementById('comment');
 const formSubmit = document.getElementById('submit');
 const form = document.getElementById('form');
+const commentNumber = document.getElementById('comment-number');
+const showCount = document.getElementById('show-count');
 
-const refresh = async () => populateView(await sanitizeData(), mainContent);
+const refresh = async () => {
+  const shows = await sanitizeData();
+  const count = counter(shows);
+  showCount.innerText = count;
+  populateView(shows, mainContent);
+};
 
 mainContent.addEventListener('click', async (e) => {
   const targetModal = e.target.closest('.open-modal');
@@ -23,6 +31,7 @@ mainContent.addEventListener('click', async (e) => {
   if (targetModal) {
     const apiData = await sanitizeData();
     const comments = await getComments(targetModal.id);
+    const commentCount = counter(comments);
     const {
       id, name, url, description,
     } = apiData.filter((it) => it.id.toString() === targetModal.id)[0];
@@ -31,6 +40,7 @@ mainContent.addEventListener('click', async (e) => {
     modalDescription.innerHTML = description;
     itemId.setAttribute('value', id);
     populateCardTable(comments);
+    commentNumber.innerText = commentCount || 0;
     document.body.style = 'filter: blur(5px)';
     modal.showModal();
   }
