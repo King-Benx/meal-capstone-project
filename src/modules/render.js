@@ -37,7 +37,7 @@ const createCard = (id, url, name, likes, element) => {
                   </g>
                 </g>
               </svg>
-              <span id=${id} class="modal-likes">${likes} Likes</span>
+              <span id=${id} class="modal-likes">${likes} ${likes === 1 ? 'Like' : 'Likes'}</span>
             </div>
           </div>
           <div class="card-footer">

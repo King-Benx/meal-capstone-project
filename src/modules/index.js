@@ -58,9 +58,9 @@ closeModal.addEventListener('click', () => {
 formSubmit.addEventListener('click', async (e) => {
   e.preventDefault();
   await createComment(itemId.value, formName.value, formComment.value);
+  const comments = await getComments(itemId.value);
+  populateCardTable(comments);
   form.reset();
-  document.body.style = 'filter:unset';
-  modal.close();
   await refresh();
 });
 
