@@ -23,7 +23,7 @@
   - [⭐️ Show your support](#️-show-your-support-)
   - [📝 License](#-license-)
 
-# 📖 JavaScript Capstone <a name="about-project"></a>
+# 📖 Your Amazing Shows <a name="about-project"></a>
 
 **Your Amazing Shows** The project delivers a simple web project in HTML, CSS, and JavaScript that consumes a movies api and microverse api supporting, commenting and liking.
 
