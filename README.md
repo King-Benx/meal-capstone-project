@@ -27,6 +27,8 @@
 
 **Your Amazing Shows** The project delivers a simple web project in HTML, CSS, and JavaScript that consumes a movies api and microverse api supporting, commenting and liking.
 
+![Screenshot 2023-03-18 at 09-01-47 Your Amazing Shows](https://user-images.githubusercontent.com/17830204/226088202-ad00f607-a781-46b2-9a35-2262c4faec3f.png)
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
