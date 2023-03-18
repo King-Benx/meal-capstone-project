@@ -20,7 +20,7 @@
   - [👥 Authors](#-authors-)
   - [🔭 Future Features](#-future-features-)
   - [🤝 Contributing](#-contributing-)
-  - [ Acknowledgement] (#-acknowledgement-)
+  - [Acknowledgement](#-acknowledgement-)
   - [⭐️ Show your support](#️-show-your-support-)
   - [📝 License](#-license-)
 
