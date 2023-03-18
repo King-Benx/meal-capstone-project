@@ -4,23 +4,24 @@ const sanitizeData = async () => {
   const sanitizedData = [];
   const BASE_URL = 'https://api.tvmaze.com/shows';
 
-  const [allLikes, data] = await Promise.all([
-    await getLikes(),
+  const [data, allLikes] = await Promise.all([
     await fetch(BASE_URL, {
       method: 'GET',
-    }).then((response) => response.json()),
+    }),
+    await getLikes(),
   ]);
-
-  for (let i = 0; i < data?.length; i += 1) {
+  const shows = await data.json();
+  for (let i = 0; i < shows?.length; i += 1) {
     const {
       id, name, summary, image,
-    } = data[i];
+    } = shows[i];
+    const likes = allLikes.filter((likes) => likes.item_id === id.toString()).length;
     sanitizedData.push({
       id: id.toString(),
       name,
       description: summary,
       url: image.original,
-      likes: allLikes.filter((likes) => likes.item_id === id.toString()).length,
+      likes,
       comments: [],
     });
   }

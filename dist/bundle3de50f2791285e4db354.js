@@ -26,7 +26,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 var sanitizeData = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-    var sanitizedData, BASE_URL, _yield$Promise$all, _yield$Promise$all2, allLikes, data, _loop, i;
+    var sanitizedData, BASE_URL, _yield$Promise$all, _yield$Promise$all2, data, allLikes, shows, _loop, i;
     return _regeneratorRuntime().wrap(function _callee$(_context2) {
       while (1) switch (_context2.prev = _context2.next) {
         case 0:
@@ -34,15 +34,13 @@ var sanitizeData = /*#__PURE__*/function () {
           BASE_URL = 'https://api.tvmaze.com/shows';
           _context2.t0 = Promise;
           _context2.next = 5;
-          return (0,_microverse_app_js__WEBPACK_IMPORTED_MODULE_0__.getLikes)();
+          return fetch(BASE_URL, {
+            method: 'GET'
+          });
         case 5:
           _context2.t1 = _context2.sent;
           _context2.next = 8;
-          return fetch(BASE_URL, {
-            method: 'GET'
-          }).then(function (response) {
-            return response.json();
-          });
+          return (0,_microverse_app_js__WEBPACK_IMPORTED_MODULE_0__.getLikes)();
         case 8:
           _context2.t2 = _context2.sent;
           _context2.t3 = [_context2.t1, _context2.t2];
@@ -51,44 +49,49 @@ var sanitizeData = /*#__PURE__*/function () {
         case 12:
           _yield$Promise$all = _context2.sent;
           _yield$Promise$all2 = _slicedToArray(_yield$Promise$all, 2);
-          allLikes = _yield$Promise$all2[0];
-          data = _yield$Promise$all2[1];
+          data = _yield$Promise$all2[0];
+          allLikes = _yield$Promise$all2[1];
+          _context2.next = 18;
+          return data.json();
+        case 18:
+          shows = _context2.sent;
           _loop = /*#__PURE__*/_regeneratorRuntime().mark(function _loop() {
-            var _data$i, id, name, summary, image;
+            var _shows$i, id, name, summary, image, likes;
             return _regeneratorRuntime().wrap(function _loop$(_context) {
               while (1) switch (_context.prev = _context.next) {
                 case 0:
-                  _data$i = data[i], id = _data$i.id, name = _data$i.name, summary = _data$i.summary, image = _data$i.image;
+                  _shows$i = shows[i], id = _shows$i.id, name = _shows$i.name, summary = _shows$i.summary, image = _shows$i.image;
+                  likes = allLikes.filter(function (likes) {
+                    return likes.item_id === id.toString();
+                  }).length;
                   sanitizedData.push({
                     id: id.toString(),
                     name: name,
                     description: summary,
                     url: image.original,
-                    likes: allLikes.filter(function (likes) {
-                      return likes.item_id === id.toString();
-                    }).length,
+                    likes: likes,
                     comments: []
                   });
-                case 2:
+                case 3:
                 case "end":
                   return _context.stop();
               }
             }, _loop);
           });
           i = 0;
-        case 18:
-          if (!(i < (data === null || data === void 0 ? void 0 : data.length))) {
-            _context2.next = 23;
+        case 21:
+          if (!(i < (shows === null || shows === void 0 ? void 0 : shows.length))) {
+            _context2.next = 26;
             break;
           }
-          return _context2.delegateYield(_loop(), "t4", 20);
-        case 20:
-          i += 1;
-          _context2.next = 18;
-          break;
+          return _context2.delegateYield(_loop(), "t4", 23);
         case 23:
+          i += 1;
+          _context2.next = 21;
+          break;
+        case 26:
           return _context2.abrupt("return", sanitizedData);
-        case 24:
+        case 27:
         case "end":
           return _context2.stop();
       }
@@ -123,32 +126,31 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 var BASE_URL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps';
 var createApp = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-    var id, appId, response;
+    var id, appId, response, data;
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) switch (_context.prev = _context.next) {
         case 0:
           id = localStorage.getItem('CapstoneAppId');
           appId = id;
           if (id) {
-            _context.next = 8;
+            _context.next = 11;
             break;
           }
           _context.next = 5;
           return fetch(BASE_URL, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            }
-          }).then(function (res) {
-            return res.text();
+            method: 'POST'
           });
         case 5:
           response = _context.sent;
-          localStorage.setItem('CapstoneAppId', response);
-          appId = response;
+          _context.next = 8;
+          return response.text();
         case 8:
+          data = _context.sent;
+          localStorage.setItem('CapstoneAppId', data);
+          appId = data;
+        case 11:
           return _context.abrupt("return", appId);
-        case 9:
+        case 12:
         case "end":
           return _context.stop();
       }
@@ -160,7 +162,7 @@ var createApp = /*#__PURE__*/function () {
 }();
 var getLikes = /*#__PURE__*/function () {
   var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
-    var id, likes;
+    var id, likes, data;
     return _regeneratorRuntime().wrap(function _callee2$(_context2) {
       while (1) switch (_context2.prev = _context2.next) {
         case 0:
@@ -174,12 +176,25 @@ var getLikes = /*#__PURE__*/function () {
           });
         case 5:
           likes = _context2.sent;
-          return _context2.abrupt("return", likes.json());
-        case 7:
+          data = [];
+          _context2.prev = 7;
+          _context2.next = 10;
+          return likes.json();
+        case 10:
+          data = _context2.sent;
+          _context2.next = 16;
+          break;
+        case 13:
+          _context2.prev = 13;
+          _context2.t0 = _context2["catch"](7);
+          data = [];
+        case 16:
+          return _context2.abrupt("return", data);
+        case 17:
         case "end":
           return _context2.stop();
       }
-    }, _callee2);
+    }, _callee2, null, [[7, 13]]);
   }));
   return function getLikes() {
     return _ref2.apply(this, arguments);
@@ -187,7 +202,7 @@ var getLikes = /*#__PURE__*/function () {
 }();
 var getComments = /*#__PURE__*/function () {
   var _ref3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3(itemId) {
-    var id, comments;
+    var id, comments, data;
     return _regeneratorRuntime().wrap(function _callee3$(_context3) {
       while (1) switch (_context3.prev = _context3.next) {
         case 0:
@@ -201,8 +216,12 @@ var getComments = /*#__PURE__*/function () {
           });
         case 5:
           comments = _context3.sent;
-          return _context3.abrupt("return", comments.json());
-        case 7:
+          _context3.next = 8;
+          return comments.json();
+        case 8:
+          data = _context3.sent;
+          return _context3.abrupt("return", data);
+        case 10:
         case "end":
           return _context3.stop();
       }
@@ -1016,4 +1035,4 @@ document.addEventListener('DOMContentLoaded', /*#__PURE__*/_asyncToGenerator( /*
 
 /******/ })()
 ;
-//# sourceMappingURL=bundlec89ddd1bc66ac0f71da7.js.map
+//# sourceMappingURL=bundle3de50f2791285e4db354.js.map

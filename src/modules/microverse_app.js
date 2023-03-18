@@ -6,10 +6,10 @@ export const createApp = async () => {
   if (!id) {
     const response = await fetch(BASE_URL, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-    }).then((res) => res.text());
-    localStorage.setItem('CapstoneAppId', response);
-    appId = response;
+    });
+    const data = await response.text();
+    localStorage.setItem('CapstoneAppId', data);
+    appId = data;
   }
   return appId;
 };
@@ -20,7 +20,13 @@ export const getLikes = async () => {
     {
       method: 'GET',
     });
-  return likes.json();
+  let data = [];
+  try {
+    data = await likes.json();
+  } catch (err) {
+    data = [];
+  }
+  return data;
 };
 
 export const getComments = async (itemId) => {
@@ -29,7 +35,8 @@ export const getComments = async (itemId) => {
     {
       method: 'GET',
     });
-  return comments.json();
+  const data = await comments.json();
+  return data;
 };
 
 export const createLike = async (id) => {
